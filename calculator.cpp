@@ -1,12 +1,9 @@
 #include "calculator.h"
+#include <cmath>
 
 int Calculator::Add (double a, double b)
 {
-<<<<<<< HEAD
-    return a + b;
-=======
-	return a + b + 0.5;
->>>>>>> 4ad40a3 (fix truncation error)
+    return round(a + b);
 }
 
 int Calculator::Sub (double a, double b)
@@ -16,5 +13,5 @@ int Calculator::Sub (double a, double b)
 
 int Calculator::Mul (double a, double b)
 {
-    return a * b + 0.5;
+    return round(a * b);
 }
